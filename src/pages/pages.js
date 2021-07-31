@@ -13,13 +13,11 @@ const Container = styled.div`
   background-size: cover;
 `;
 
-const Aboutpage = () => (
+const pages = () => (
   <Layout>
-    <Seo title="About" description="" />
+    <Seo title="pages" description="" />
     <Section>
-      <Container>
-        {/* <HomeAbout /> */}
-      </Container>
+      <Container>{/* <HomeAbout /> */}</Container>
       <MainContainer className="block sm:flex ">
         <div className="w-full sm:w-1/2">
           <Title className="text-yellow-900 font-semibold">WHO WE ARE</Title>
@@ -51,4 +49,4 @@ const Aboutpage = () => (
   </Layout>
 );
 
-export default Aboutpage;
+export default pages;

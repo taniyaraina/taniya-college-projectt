@@ -5,9 +5,9 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 // import Countup from '../components/Countup';
 
-const Review = () => (
+const Research = () => (
   <Layout>
-    <Seo title="Review" description="" />
+    <Seo title="Research" description="" />
     <div className="flex justify-center">
       <div className="w-full sm:w-1/2">
         <img className="image" src="/images/hangout.png" alt="contact us" />
@@ -17,4 +17,4 @@ const Review = () => (
   </Layout>
 );
 
-export default Review;
+export default Research;

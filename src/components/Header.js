@@ -6,24 +6,33 @@ import { Link } from 'gatsby';
 // import Social from './Social';
 
 const Navbar = styled.div`
+  .nav {
+    display: flex;
+    flex: 3;
+  }
   .nav-items-colors {
-    color: #3368c6 !important;
-    font-family: 'Poppins' !important;
     font-size: 1rem;
     line-height: 1.6875;
+    font-weight: 500;
   }
   img {
     object-fit: contain;
     height: 60px;
     width: 160px;
   }
+  .nav-items-colors :hover {
+    border: solid #3368c6;
+    border-width: 0 0 4px 0;
+    transition: all 0.2s;
+  }
 `;
 const NavItems = [
-  { id: 1, name: 'home', url: '/' },
-  { id: 2, name: 'about', url: '/aboutpage' },
-  { id: 3, name: 'review', url: '/review' },
-  { id: 4, name: 'blog', url: '/news' },
-  { id: 5, name: 'Get In Touch', url: '/contact' },
+  { id: 1, name: 'Home', url: '/' },
+  { id: 2, name: 'Pages', url: '/pages' },
+  { id: 3, name: 'Research', url: '/research' },
+  { id: 4, name: 'Services', url: '/services' },
+  { id: 5, name: 'blog', url: '/news' },
+  { id: 6, name: 'Contacts', url: '/contact' },
 ];
 export default class Header extends React.Component {
   constructor(props) {
@@ -44,8 +53,8 @@ export default class Header extends React.Component {
   render() {
     const { isActive } = this.state;
     return (
-      <Navbar className="flex items-center justify-between flex-wrap py-4 px-12">
-        <div className="flex items-center flex-shrink-0 mr-6">
+      <Navbar className="flex items-center justify-between flex-wrap py-4 px-16">
+        <div className="flex items-center flex-shrink-0 mr-32 pl-24 flex-grow">
           <img src="/images/logo-tech.png" alt="tech-logo" />
         </div>
         <div className="block lg:hidden">
@@ -77,11 +86,11 @@ export default class Header extends React.Component {
               ? 'w-full block flex-grow lg:flex lg:items-center lg:w-auto'
               : 'w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden'
           }>
-          <div className="text-sm text-center lg:flex-grow uppercase">
+          <div className="text-sm text-center lg:flex-grow">
             {NavItems.map(item => (
               <Link
                 to={item.url}
-                className="block mt-4 lg:inline-block lg:mt-0 text-sm mr-6 nav-items-colors"
+                className="block mt-6 lg:inline-block lg:mt-0 text-sm mr-8 tracking-wide nav-items-colors"
                 key={item.id}>
                 {item.name}
               </Link>
