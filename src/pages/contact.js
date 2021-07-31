@@ -14,7 +14,7 @@ const Contact = () => (
     <Section>
       <div className="flex justify-center">
         <div className="w-full sm:w-1/2">
-          <img className="image" src="/images/contact.png" alt="contact us" />
+          <img className="image" src="" alt="contact us" />
         </div>
       </div>
       <MainContainer className="text-center">

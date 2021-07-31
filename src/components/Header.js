@@ -5,8 +5,18 @@ import { Link } from 'gatsby';
 
 // import Social from './Social';
 
-const Navbar = styled.nav`
-  background: ${props => props.theme.primaryColor};
+const Navbar = styled.div`
+  .nav-items-colors {
+    color: #3368c6 !important;
+    font-family: 'Poppins' !important;
+    font-size: 1rem;
+    line-height: 1.6875;
+  }
+  img {
+    object-fit: contain;
+    height: 60px;
+    width: 160px;
+  }
 `;
 const NavItems = [
   { id: 1, name: 'home', url: '/' },
@@ -36,14 +46,11 @@ export default class Header extends React.Component {
     return (
       <Navbar className="flex items-center justify-between flex-wrap py-4 px-12">
         <div className="flex items-center flex-shrink-0 mr-6">
-          <img
-            src="https://colorlib.com/preview/theme/coffee/img/logo.png"
-            alt="cafe-logo"
-          />
+          <img src="/images/logo-tech.png" alt="tech-logo" />
         </div>
         <div className="block lg:hidden">
           <button
-            className="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-white hover:border-white"
+            className="flex items-center px-3 py-2 border rounded border-teal-400 hover:text-white hover:border-white"
             onClick={() => this.handleMobileMenu()}>
             {isActive ? (
               <svg
@@ -74,7 +81,7 @@ export default class Header extends React.Component {
             {NavItems.map(item => (
               <Link
                 to={item.url}
-                className="block mt-4 lg:inline-block lg:mt-0 text-sm mr-6"
+                className="block mt-4 lg:inline-block lg:mt-0 text-sm mr-6 nav-items-colors"
                 key={item.id}>
                 {item.name}
               </Link>

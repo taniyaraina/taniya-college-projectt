@@ -9,7 +9,9 @@ import Layout from '../components/Layout';
 // import Gallery from '../components/Gallery';
 // import Countup from '../components/Countup';
 
-const Container = styled.div``;
+const Container = styled.div`
+  font-family: 'Poppins', sans-serif;
+`;
 
 export default class IndexPage extends React.Component {
   render() {
