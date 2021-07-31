@@ -8,23 +8,23 @@ module.exports = {
     siteUrl: config.siteUrl,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/PageLayout.js'),
-        },
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1035,
-              sizeByPixelDensity: true,
-            },
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     defaultLayouts: {
+    //       default: require.resolve('./src/components/PageLayout.js'),
+    //     },
+    //     gatsbyRemarkPlugins: [
+    //       {
+    //         resolve: `gatsby-remark-images`,
+    //         options: {
+    //           maxWidth: 1035,
+    //           sizeByPixelDensity: true,
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
