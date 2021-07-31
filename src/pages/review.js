@@ -3,7 +3,7 @@ import React from 'react';
 
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import Countup from '../components/Countup';
+// import Countup from '../components/Countup';
 
 const Review = () => (
   <Layout>
@@ -13,7 +13,7 @@ const Review = () => (
         <img className="image" src="/images/hangout.png" alt="contact us" />
       </div>
     </div>
-    <Countup />
+    {/* <Countup /> */}
   </Layout>
 );
 

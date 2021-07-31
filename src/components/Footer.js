@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Subtitle, MainContainer } from './elements';
-import Social from './Social';
+// import Social from './Social';
 
 const Container = styled.div`
   background: url(https://colorlib.com/preview/theme/coffee/img/footer-bg.jpg);
@@ -50,9 +50,7 @@ const Footer = () => (
         <Subtitle className="font-hairline leading-tight pt-8">
           Let us be social
         </Subtitle>
-        <div className="pt-6 flex">
-          <Social />
-        </div>
+        <div className="pt-6 flex">{/* <Social /> */}</div>
       </div>
     </MainContainer>
   </Container>

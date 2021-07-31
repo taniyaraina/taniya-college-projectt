@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import Social from './Social';
+// import Social from './Social';
 
 const Navbar = styled.nav`
   background: ${props => props.theme.primaryColor};
@@ -80,9 +80,7 @@ export default class Header extends React.Component {
               </Link>
             ))}
           </div>
-          <div>
-            <Social />
-          </div>
+          <div>{/* <Social /> */}</div>
         </div>
       </Navbar>
     );

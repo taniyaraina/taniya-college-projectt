@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Seo from '../components/Seo';
-import HomeAbout from '../components/HomeAbout';
+// import HomeAbout from '../components/HomeAbout';
 import Layout from '../components/Layout';
 import { Title, Subtitle, MainContainer } from '../components/elements';
 
@@ -18,7 +18,7 @@ const Aboutpage = () => (
     <Seo title="About" description="" />
     <Section>
       <Container>
-        <HomeAbout />
+        {/* <HomeAbout /> */}
       </Container>
       <MainContainer className="block sm:flex ">
         <div className="w-full sm:w-1/2">

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import { Title, Subtitle, MainContainer } from '../components/elements';
-import Form from '../components/Form';
+// import Form from '../components/Form';
 
 const Section = styled.div``;
 
@@ -29,7 +29,7 @@ const Contact = () => (
               eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim.
             </Subtitle>
-            <Form />
+            {/* <Form /> */}
           </div>
           <div className="w-full sm:w-1/2 text-center">
             <Subtitle className="text-yellow-900 font-semibold">
