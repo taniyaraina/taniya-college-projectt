@@ -12,7 +12,7 @@ module.exports = {
     //   resolve: `gatsby-plugin-mdx`,
     //   options: {
     //     defaultLayouts: {
-    //       default: require.resolve('./src/components/PageLayout.js'),
+    //       default: requirea.resolve('./src/components/PageLayout.js'),
     //     },
     //     gatsbyRemarkPlugins: [
     //       {
@@ -45,7 +45,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'minimal-ui',
-        icon: './static/images/logo.jpg',
+        icon: './static/images/logo-tech.png',
       },
     },
     `gatsby-plugin-offline`,

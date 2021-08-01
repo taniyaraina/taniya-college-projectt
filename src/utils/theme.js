@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset-advanced';
-import { darken, lighten } from 'polished';
 
 const mainBrandColor = '#3368C6';
 const lightShades = '#F5F5F5';
