@@ -20,11 +20,11 @@ const Navbar = styled.div`
     height: 60px;
     width: 160px;
   }
-  .nav-items-colors :hover {
+  /* .nav-items-colors :hover {
     border: solid #3368c6;
     border-width: 0 0 4px 0;
     transition: all 0.2s;
-  }
+  } */
 `;
 const NavItems = [
   { id: 1, name: 'Home', url: '/' },
@@ -53,7 +53,7 @@ export default class Header extends React.Component {
   render() {
     const { isActive } = this.state;
     return (
-      <Navbar className="flex items-center justify-between flex-wrap py-4 px-16">
+      <Navbar className="flex items-center justify-between flex-wrap py-4 px-16 min-w-full bg-white">
         <div className="flex items-center flex-shrink-0 mr-32 pl-24 flex-grow">
           <img src="/images/logo-tech.png" alt="tech-logo" />
         </div>

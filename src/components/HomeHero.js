@@ -10,28 +10,46 @@ const HomeHero = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows:true
+    arrows: true,
   };
   return (
     <div>
       <Slider {...settings}>
         <div>
-        <img src="https://bulma.io/images/placeholders/480x640.png" alt="test"/>
+          <img
+            src="https://bulma.io/images/placeholders/480x640.png"
+            alt="test"
+          />
         </div>
         <div>
-        <img src="https://bulma.io/images/placeholders/480x640.png" alt="test"/>
+          <img
+            src="https://bulma.io/images/placeholders/480x640.png"
+            alt="test"
+          />
         </div>
         <div>
-        <img src="https://bulma.io/images/placeholders/480x640.png" alt="test"/>
+          <img
+            src="https://bulma.io/images/placeholders/480x640.png"
+            alt="test"
+          />
         </div>
         <div>
-        <img src="https://bulma.io/images/placeholders/480x640.png" alt="test"/>
+          <img
+            src="https://bulma.io/images/placeholders/480x640.png"
+            alt="test"
+          />
         </div>
         <div>
-        <img src="https://bulma.io/images/placeholders/480x640.png" alt="test"/>
+          <img
+            src="https://bulma.io/images/placeholders/480x640.png"
+            alt="test"
+          />
         </div>
         <div>
-        <img src="https://bulma.io/images/placeholders/480x640.png" alt="test"/>
+          <img
+            src="https://bulma.io/images/placeholders/480x640.png"
+            alt="test"
+          />
         </div>
       </Slider>
     </div>
