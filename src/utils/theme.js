@@ -42,18 +42,15 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: ${theme.primaryFontFamily};
+    overflow-x: hidden;
 
   }
   .nav-items-colors {
     color: ${theme.primaryColor}!important;
     opacity: 0.9;
   }
-  input {
-    border: 1px solid #b68834 !important;
-  }
-  textarea {
-    border: 1px solid #b68834 !important;
-  }
+
+
   .card {
     background-color: ${theme.colorWhite}!important;
     box-shadow: ${theme.boxShadow};
@@ -62,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.colorWhite}!important;
   }
   a {
-    color: ${theme.colorWhite}!important;
+    ${'' /* color: ${theme.colorWhite}!important; */}
   }
   .text-yellow-900 {
     color: ${theme.secondaryColor}!important;
