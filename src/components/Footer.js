@@ -10,6 +10,7 @@ const Container = styled.div`
   /* background: url(https://colorlib.com/preview/theme/coffee/img/footer-bg.jpg);
   background-size: cover;
   background-position: center; */
+
   .logo {
     object-fit: contain;
     width: 130px;
@@ -18,7 +19,8 @@ const Container = styled.div`
   .text-color {
     color: #031b4e;
   }
-  .color-text {
+  .color-text,
+  .color-last-text {
     color: #3368c6;
     opacity: 0.75;
   }
@@ -32,11 +34,28 @@ const Container = styled.div`
   button {
     background-color: #8893b9;
   }
+  .color {
+    color: #3368c6;
+  }
+  .paragraph:hover {
+    opacity: 1;
+    color: #8893b9;
+    transition-duration: 1s;
+  }
+  .span:hover {
+    opacity: 1;
+    color: #3368c6;
+    transition-duration: 1s;
+  }
+  .line {
+    border-top: 1px solid #000000;
+    opacity: 0.15;
+  }
 `;
 
 const Footer = () => (
-  <Container tw="">
-    <MainContainer className="container  py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+  <Container className="pb-16">
+    <MainContainer className="container py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left logo">
         <img src="/images/logo-tech.png" alt="tech-logo" />
       </div>
@@ -93,10 +112,16 @@ const Footer = () => (
         </div>
       </div>
     </MainContainer>
-    <div className="">
-      <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+    <div className="flex px-24 py-2 -mt-8">
+      <div className="container mx-auto py-2 px-10 flex flex-wrap flex-col sm:flex-row">
+        <p className=" text-center sm:text-left text-blue-700 flex">
+          <i className="fa fa-phone text-lg" aria-hidden="true" />
+          <p className="pl-4 text-gray-500 text-xl font-medium paragraph cursor-pointer">
+            1234 567 89 10
+          </p>
+        </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-          <a className="text-gray-500">
+          <a className="text-gray-500 span cursor-pointer">
             <svg
               fill="currentColor"
               strokeLinecap="round"
@@ -107,7 +132,7 @@ const Footer = () => (
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
             </svg>
           </a>
-          <a className="ml-3 text-gray-500">
+          <a className="ml-3 text-gray-500 span cursor-pointer">
             <svg
               fill="currentColor"
               strokeLinecap="round"
@@ -118,7 +143,7 @@ const Footer = () => (
               <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
             </svg>
           </a>
-          <a className="ml-3 text-gray-500">
+          <a className="ml-3 text-gray-500 span cursor-pointer">
             <svg
               fill="none"
               stroke="currentColor"
@@ -131,7 +156,7 @@ const Footer = () => (
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
             </svg>
           </a>
-          <a className="ml-3 text-gray-500">
+          <a className="ml-3 text-gray-500 span cursor-pointer">
             <svg
               fill="currentColor"
               stroke="currentColor"
@@ -150,17 +175,11 @@ const Footer = () => (
         </span>
       </div>
     </div>
-    <div>
-      <p className="text-gray-500 text-sm text-center sm:text-left">
-        <i className="fas fa-phone-alt" />
-        <a
-          href="https://twitter.com/knyttneve"
-          rel="noopener noreferrer"
-          className="text-color ml-1"
-          target="_blank">
-          @knyttneve
-        </a>
-      </p>
+    <div className="mx-24 line border-gray-300 py-3" />
+    <div className="color-last-text ml-24 pl-6">
+      <a className="color ml-1" target="_blank">
+        © Copyright 2019 Mobirise - All Rights Reserved
+      </a>
     </div>
   </Container>
 );

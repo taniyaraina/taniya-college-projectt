@@ -28,7 +28,7 @@ export default class HTML extends React.Component {
           <script src="/js/scripts.js" />
           <script
             defer
-            src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+            src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
           />
           {/* Add custom css or scripts here */}
           {this.props.headComponents}

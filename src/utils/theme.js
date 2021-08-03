@@ -28,7 +28,7 @@ export const theme = {
   colorWhite: '#ffffff',
   // darkBlack: '#222222',//
   lighterBlack: '#000',
-  textGrayishblue: '##8893b9',
+  Grayblue: '##8893b9',
   bodyColor: '#404040',
   // backgroundInputColor: lightShades,
   // backgroundInputColorDark: darkShades,

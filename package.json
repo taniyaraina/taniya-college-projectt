@@ -1,13 +1,10 @@
 {
-  "name": "kickoff-gatsbyjs",
+  "name": "gatsby",
   "description": "A react starting point using GatsbyJS",
   "version": "2.0.1",
   "author": "Parminder Klair",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/perminder-klair/kickoff-gatsbyjs.git"
-  },
+  "repository": "git+https://github.com/perminder-klair/kickoff-gatsbyjs.git",
   "bugs": {
     "url": "https://github.com/perminder-klair/kickoff-gatsbyjs/issues"
   },
@@ -20,7 +17,7 @@
     "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+
     "@mdx-js/mdx": "^1.4.4",
     "@mdx-js/react": "^1.4.4",
     "dayjs": "^1.8.16",
@@ -43,6 +40,7 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-slick": "^0.28.1",
+    "sharp": "^0.28.3",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.3.2",
     "styled-reset-advanced": "^1.0.1",
@@ -68,5 +66,6 @@
     "graphql",
     "reactjs",
     "boilerplate"
-  ]
+  ],
+  "main": "index.js"
 }
