@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${theme.primaryFontFamily};
     overflow-x: hidden;
-
+    color: ${theme.bodycolor};
   }
   .nav-items-colors {
     color: ${theme.primaryColor}!important;
@@ -54,6 +54,14 @@ const GlobalStyle = createGlobalStyle`
   .card:hover {
     background-color: ${theme.colorWhite}!important;
     box-shadow: ${theme.boxShadow};
+    p,span {
+      color: ${theme.bodyColor};
+      transition-duration: 1.5s;
+    }
+    .filter {
+      filter: none;
+    }
+    transition-duration: 0.5s;
   }
   i {
     color: ${theme.colorWhite}!important;
