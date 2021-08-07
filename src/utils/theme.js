@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
 
-  .card {
+  .card:hover {
     background-color: ${theme.colorWhite}!important;
     box-shadow: ${theme.boxShadow};
   }

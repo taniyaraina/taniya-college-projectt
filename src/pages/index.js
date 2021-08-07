@@ -8,6 +8,7 @@ import HomeHero from '../components/HomeHero';
 // import HomeAbout from '../components/HomeAbout';
 // import Products from '../components/Products';
 // import Countup from '../components/Countup';
+import Testimonials from '../components/Testimonials';
 import Seo from '../components/Seo';
 
 const Container = styled.div``;
@@ -24,6 +25,7 @@ const IndexPage = () => {
       <Products />
       <Gallery />
       <Countup /> */}
+      <Testimonials />
       </Container>
     </Layout>
   );
